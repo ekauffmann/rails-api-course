@@ -44,3 +44,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', git: 'https://github.com/plataformatec/devise'
 gem 'simple_token_authentication', '~> 1.0'
 gem 'koala', '~> 3.0.0'
+
+gem 'faker'
+
+gem 'active_model_serializers', '~> 0.10.0'
