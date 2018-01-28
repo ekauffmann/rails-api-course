@@ -13,3 +13,20 @@ pp 'Seeding 20 books'
     author: Faker::Book.author,
     image: Faker::Avatar.image
 end
+
+pp 'Seeding 10 users'
+
+10.times do |n|
+  User.create! email: Faker::Internet.email,
+    password: 'test_user'
+end
+
+pp 'Seeding 100 reviews'
+
+100.times do |n|
+  Review.create! title: 'Best book ever!',
+    content_rating: Faker::Number.between(1,10),
+    recommend_rating: Faker::Number.between(1,10),
+    user_id: Faker::Number.between(1,10),
+    book_id: Faker::Number.between(1,20)
+end
